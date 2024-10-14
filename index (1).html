@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Radio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="radio-interface">
+        <h1>Radio Ciencia</h1>
+        <audio controls>
+            <source src="https://zeno.fm/radio/infocentroradioweb/" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+    
+    <div class="chatbot-interface">
+        <div class="chatbot">
+            <div class="headphones"></div>
+            <div class="face">🤖</div>
+        </div>
+        <div id="chatbox"></div>
+        <input type="text" id="userInput" placeholder="Escribe un mensaje...">
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
